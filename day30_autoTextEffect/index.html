@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("http://fonts.googleapis.com/css?family=Roboto:400,700&quot;italic&quot;");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #ab4949;
+        overflow: hidden;
+      }
+
+      div {
+        position: absolute;
+        bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        font-size: 18px;
+      }
+
+      input {
+        width: 50px;
+        padding: 5px;
+        font-size: 18px;
+        background-color: #ab4949;
+        border: none;
+        text-align: center;
+      }
+
+      input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text">Starting...</h1>
+    <div class="">
+      <label for="speed"> Speed:</label>
+      <input
+        type="number"
+        name="speed"
+        id="speed"
+        value="1"
+        min="1"
+        max="5"
+        step="1"
+      />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
